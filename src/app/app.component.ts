@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  title = 'Controle de Epidemia';
+
+  trocaTitulo() {
+    this.title = this.title.toUpperCase();
+  }
+
 }

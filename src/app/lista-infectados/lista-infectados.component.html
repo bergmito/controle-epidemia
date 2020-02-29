@@ -1,0 +1,15 @@
+<p>lista-infectados works!</p>
+<form [formGroup]="infectadoForm"> 
+    <span>Nome:</span><input type="text" formControlName="nome" /><br>
+    <span>Doença:</span><input type="text" formControlName="doenca" /><br>
+    <span>Idade:</span><input type="text" formControlName="idade" /><br>
+</form>
+<br>
+<button (click)="incluirIfectado()">
+    + Infectado
+</button>
+<br><br>
+<div *ngFor="let infectado of infectados">
+    {{ infectado.nome }} 
+    {{ infectado.doenca }}
+</div>
